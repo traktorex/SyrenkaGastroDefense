@@ -22,15 +22,23 @@ public class EnemySpawner : MonoBehaviour
     private int enemiesLeftToSpawn;
     private bool isSpawning = false;
 
+    private void Start()
+    {
+        StartWave();
+    }
+
     private void Update()
     {
         if (!isSpawning) return;
 
         timeSinceLastSpawn += Time.deltaTime;
 
-        if (timeSinceLastSpawn >= (1f / enemiesPerSecond))
+        if (timeSinceLastSpawn >= (1f / enemiesPerSecond) && enemiesLeftToSpawn > 0)
         {
-            Debug.Log("Spawn Enemy");
+            SpawnEnemy();
+            enemiesLeftToSpawn--;
+            enemiesAlive++;
+            timeSinceLastSpawn = 0f;
         }
     }
 
@@ -38,6 +46,11 @@ public class EnemySpawner : MonoBehaviour
     {
         isSpawning = true;
         enemiesLeftToSpawn = EnemiesPerWave();
+    }
+
+    private void SpawnEnemy()
+    {
+        Debug.Log("Spawn Enemy");
     }
 
     private int EnemiesPerWave()
