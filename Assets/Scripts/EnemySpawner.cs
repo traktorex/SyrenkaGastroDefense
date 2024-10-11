@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -15,6 +17,8 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private float difficultyScalingFactor = 0.75f;
     //higher the number the more enemies will spawn per Wave --> z 8 base enemies, w drugiej fali bêdzie ju¿ 13
 
+    [Header("Events")]
+    public static UnityEvent onEnemyDestroy = new UnityEvent();
 
     private int currentWave = 1;
     private float timeSinceLastSpawn;
@@ -22,9 +26,14 @@ public class EnemySpawner : MonoBehaviour
     private int enemiesLeftToSpawn;
     private bool isSpawning = false;
 
+
+    private void Awake()
+    {
+        onEnemyDestroy.AddListener(EnemyDestroyed);
+    }
     private void Start()
     {
-        StartWave();
+        StartCoroutine(StartWave());
     }
 
     private void Update()
@@ -40,16 +49,39 @@ public class EnemySpawner : MonoBehaviour
             enemiesAlive++;
             timeSinceLastSpawn = 0f;
         }
+
+        if (enemiesAlive == 0 && enemiesLeftToSpawn == 0)
+        {
+            EndWave();
+        }
     }
 
-    private void StartWave()
+    private void EnemyDestroyed()
     {
+        enemiesAlive--;
+    }
+
+    //Enemy Wave
+    private IEnumerator StartWave()
+    {
+        yield return new WaitForSeconds(timeBetweenWaves);
+
         isSpawning = true;
         enemiesLeftToSpawn = EnemiesPerWave();
     }
 
+    private void EndWave()
+    {
+        isSpawning = false;
+        timeSinceLastSpawn = 0f;
+        currentWave++;
+        StartCoroutine(StartWave());
+
+    }
     private void SpawnEnemy()
     {
+        GameObject prefabToSpawn = enemyPrefabs[0];
+        Instantiate(prefabToSpawn, LevelManager.main.start.position, Quaternion.identity);
         Debug.Log("Spawn Enemy");
     }
 
