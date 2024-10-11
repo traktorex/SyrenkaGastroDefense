@@ -5,11 +5,18 @@ using UnityEditor;
 
 public class Turrets : MonoBehaviour
 {
+    [Header("References")]
+    [SerializeField] private LayerMask enemyMask;
+    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private Transform firingPoint;
+
     [Header("Attribute")]
     [SerializeField] private float targetingRange = 3.5f;
-    [SerializeField] private LayerMask enemyMask;
+    [SerializeField] private float bulletsPerSecond = 1f;
+   
 
     private Transform target;
+    private float timeUntilFire;
 
     private void Update()
     {
@@ -23,6 +30,22 @@ public class Turrets : MonoBehaviour
         {
             target = null;
         }
+
+        else
+        {
+            timeUntilFire += Time.deltaTime;
+
+            if (timeUntilFire >= 1f/bulletsPerSecond)
+            {
+                Shoot();
+                timeUntilFire = 0f;
+            }
+        }
+    }
+
+    private void Shoot()
+    {
+        Debug.Log("Turret is shooting.");
     }
 
     private void FindTarget()
