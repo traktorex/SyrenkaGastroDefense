@@ -6,6 +6,7 @@ using UnityEditor;
 public class Turrets : MonoBehaviour
 {
     [Header("References")]
+    [SerializeField] private Transform turretRotationPoint;
     [SerializeField] private LayerMask enemyMask;
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform firingPoint;
@@ -13,6 +14,7 @@ public class Turrets : MonoBehaviour
     [Header("Attribute")]
     [SerializeField] private float targetingRange = 3.5f;
     [SerializeField] private float bulletsPerSecond = 1f;
+    [SerializeField] private float rotationSpeed = 100f;
    
 
     private Transform target;
@@ -45,7 +47,11 @@ public class Turrets : MonoBehaviour
 
     private void Shoot()
     {
+        GameObject bulletObj = Instantiate(bulletPrefab, firingPoint.position, Quaternion.identity);
+        Bullets bulletScript = bulletObj.GetComponent<Bullets>();
+        bulletScript.SetTarget(target);
         Debug.Log("Turret is shooting.");
+
     }
 
     private void FindTarget()
@@ -61,6 +67,14 @@ public class Turrets : MonoBehaviour
     private bool CheckTargetIsInRange()
     {
         return Vector2.Distance(target.position, transform.position) <= targetingRange;
+    }
+
+    private void RotateTowardsTarget()
+    {
+        float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg;
+        
+        Quaternion targetRotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
+        turretRotationPoint.rotation = Quaternion.RotateTowards(turretRotationPoint.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
     private void OnDrawGizmosSelected()
     {
