@@ -7,7 +7,6 @@ using TMPro;
 public class HoverMenu : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [Header("References")]
-    [SerializeField] TextMeshProUGUI currencyUI;
     [SerializeField] Animator animator;
 
     private bool isMenuOpen = false;
@@ -26,10 +25,7 @@ public class HoverMenu : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         Debug.Log("OnMouseExit");
     }
 
-    private void OnGUI()
-    {
-        currencyUI.text = LevelManager.main.currency.ToString();
-    }
+    
 
    
     

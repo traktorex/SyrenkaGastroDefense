@@ -7,7 +7,6 @@ public class BuildingManager : MonoBehaviour
     public static BuildingManager main;
 
     [Header("References")]
-    //[SerializeField] private GameObject[] towerPrefabs;
     [SerializeField] private Tower[] towers;
 
 
