@@ -24,14 +24,17 @@ public class EnemyMovement : MonoBehaviour
         {
             pathIndex++;
 
+            Debug.Log("Z");
             if (pathIndex == LevelManager.main.path.Length)
             {
+                Debug.Log("A");
                 EnemySpawner.onEnemyDestroy.Invoke();
                 Destroy(gameObject);
                 return;
             }
             else 
-            { 
+            {
+                Debug.Log("B");
                 target = LevelManager.main.path[pathIndex]; 
             }
         }
