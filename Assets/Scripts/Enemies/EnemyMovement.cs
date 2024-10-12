@@ -20,21 +20,18 @@ public class EnemyMovement : MonoBehaviour
 
     private void Update()
     {
-        if (Vector2.Distance(target.position, transform.position) <= 0.1f)
+        if (Vector2.Distance(target.position, transform.position) < 0.1f*moveSpeed)
         {
             pathIndex++;
 
-            Debug.Log("Z");
             if (pathIndex == LevelManager.main.path.Length)
             {
-                Debug.Log("A");
                 EnemySpawner.onEnemyDestroy.Invoke();
                 Destroy(gameObject);
                 return;
             }
             else 
             {
-                Debug.Log("B");
                 target = LevelManager.main.path[pathIndex]; 
             }
         }
