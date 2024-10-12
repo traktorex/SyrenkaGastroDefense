@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 65332808024210013}
   - component: {fileID: 1874330835797502275}
   m_Layer: 0
-  m_Name: SniperTurret
+  m_Name: SnowSniper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
