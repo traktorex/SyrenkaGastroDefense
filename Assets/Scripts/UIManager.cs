@@ -41,6 +41,7 @@ public class UIManager : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+        Debug.Log("The game is now closing");
     }
 
     //InGame Menu
