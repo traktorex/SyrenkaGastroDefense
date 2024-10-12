@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6079107495632047619}
   - component: {fileID: 8205070736844959982}
   m_Layer: 7
-  m_Name: WeakBullet
+  m_Name: BulletPyza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
+  m_LocalScale: {x: 0.66, y: 0.66, z: 0.66}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -120,7 +120,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.99999994, y: 1.9999999}
+  m_Size: {x: 75, y: 50}
   m_Direction: 0
 --- !u!50 &6079107495632047619
 Rigidbody2D:
@@ -162,6 +162,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 6079107495632047619}
-  bulletSpeed: 650
+  bulletSpeed: 750
   bulletDamage: 0.25
   target: {fileID: 0}
