@@ -17,7 +17,7 @@ public class UIManager : MonoBehaviour
 
     public void ExitGame()
     {
-
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void ReloadLevel()
