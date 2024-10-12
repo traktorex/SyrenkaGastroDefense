@@ -77,9 +77,13 @@ public class EnemySpawner : MonoBehaviour
     {
         isSpawning = false;
         timeSinceLastSpawn = 0f;
-        currentWave++;
-        StartCoroutine(StartWave());
-
+        if(currentWave < LevelManager.main.numberOfWaves)
+        {
+            currentWave++;
+            StartCoroutine(StartWave());
+        }
+        //else
+            //wyswietl koniec poziomu itd
     }
     private void SpawnEnemy()
     {

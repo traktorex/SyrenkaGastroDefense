@@ -10,7 +10,8 @@ public class WaveCounter : MonoBehaviour
 
     private void OnGUI()
     {
-        waveUI.text = EnemySpawner.currentWave.ToString();
+        waveUI.text = EnemySpawner.currentWave.ToString() + '/' + 
+            LevelManager.main.numberOfWaves.ToString();
     }
 
 }

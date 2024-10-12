@@ -11,6 +11,7 @@ public class LevelManager : MonoBehaviour
     public Transform[] path;
 
     public int currency;
+    public int numberOfWaves = 8;
 
     private void Awake()
     {
