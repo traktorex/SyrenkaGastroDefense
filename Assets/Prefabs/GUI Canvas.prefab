@@ -1089,6 +1089,7 @@ GameObject:
   - component: {fileID: 7614686419658237075}
   - component: {fileID: 6058665539156828978}
   - component: {fileID: 2707580234152224061}
+  - component: {fileID: 9165543655117106973}
   m_Layer: 5
   m_Name: GUI Canvas
   m_TagString: Untagged
@@ -1140,7 +1141,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!114 &7614686419658237075
 MonoBehaviour:
@@ -1195,6 +1196,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currencyUI: {fileID: 472256833391314724}
+--- !u!114 &9165543655117106973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3512534087617205406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b71e443e6293a246b9e85a920a0d375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waveUI: {fileID: 2647732232931878774}
 --- !u!1 &3682732096454071278
 GameObject:
   m_ObjectHideFlags: 0
