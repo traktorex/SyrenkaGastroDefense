@@ -5,11 +5,11 @@ using UnityEngine;
 public class Enemy_Health : MonoBehaviour
 {
     [Header("Attributes")]
-    [SerializeField] private int hitPoints = 2;
+    [SerializeField] private float hitPoints = 2;
     [SerializeField] private int currencyWorth = 25;
 
     private bool isDestroyed = false;
-    public void TakeDamage(int dmg)
+    public void TakeDamage(float dmg)
     {
         hitPoints -= dmg;
 

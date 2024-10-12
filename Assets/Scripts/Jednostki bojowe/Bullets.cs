@@ -6,20 +6,20 @@ using UnityEngine;
 public class Bullets : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] public Rigidbody2D rb;
 
     [Header("Attributes")]
-    [SerializeField] private float bulletSpeed = 10f;
-    [SerializeField] private int bulletDamage = 1;
+    [SerializeField] public float bulletSpeed = 10f;
+    [SerializeField] public int bulletDamage = 1;
 
-    private Transform target;
+    public Transform target;
 
     public void SetTarget(Transform _target)
     {
         target = _target;
     }
 
-    private void FixedUpdate()
+    public void FixedUpdate()
     {
         if (!target) return;
         Vector2 direction = (target.position - transform.position).normalized;
@@ -27,7 +27,7 @@ public class Bullets : MonoBehaviour
         rb.velocity = direction * bulletSpeed;
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    public void OnCollisionEnter2D(Collision2D other)
     {
         other.gameObject.GetComponent<Enemy_Health>().TakeDamage(bulletDamage);
         Destroy(gameObject);
