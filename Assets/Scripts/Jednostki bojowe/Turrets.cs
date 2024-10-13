@@ -12,7 +12,7 @@ public class Turrets : MonoBehaviour
     [SerializeField] private Transform firingPoint;
 
     [Header("Attribute")]
-    [SerializeField] private float targetingRange = 3.5f;
+    [SerializeField] public float targetingRange = 3.5f;
     [SerializeField] private float bulletsPerSecond = 1f;
     [SerializeField] private float rotationSpeed = 100f;
 
