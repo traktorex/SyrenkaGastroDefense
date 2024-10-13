@@ -28,6 +28,7 @@ public class EnemyMovement : MonoBehaviour
             {
                 EnemySpawner.onEnemyDestroy.Invoke();
                 Destroy(gameObject);
+                EndLevel.LoseHP();
                 return;
             }
             else 
