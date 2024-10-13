@@ -802,7 +802,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 520
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1053,8 +1053,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -562}
-  m_SizeDelta: {x: 1340, y: 200}
+  m_AnchoredPosition: {x: -22.288, y: -514.2404}
+  m_SizeDelta: {x: 1640, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2020778726
 MonoBehaviour:
@@ -1076,11 +1076,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Game created in 48 hours for Warsaw Mermaid Jam by\n\nMajka Rogocka\nMicha\u0142
-    D\u0119bski\nMimo Landsberg\nSonik Landsberg\n"
+  m_text: "Gra stworzona w 48 godzin przez SigmaStudios sk\u0142adaj\u0105ce si\u0119
+    z \n\nMajki Rogockiej\nMicha\u0142a D\u0119bskiego\nMimo Landsberga\nSonika Landsberga\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6709c7369b7a84447a100fa132ebb6c0, type: 2}
+  m_sharedMaterial: {fileID: -5051002431878336965, guid: 6709c7369b7a84447a100fa132ebb6c0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1104,8 +1104,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48
-  m_fontSizeBase: 48
+  m_fontSize: 64
+  m_fontSizeBase: 64
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1325,8 +1325,8 @@ RectTransform:
   - {fileID: 505904373}
   - {fileID: 530078383}
   - {fileID: 1057696906}
-  - {fileID: 1352904383}
   - {fileID: 887608712}
+  - {fileID: 1352904383}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
