@@ -10,6 +10,7 @@ public class Plot : MonoBehaviour
     [SerializeField] private Color hovercolor;
     [SerializeField] SpriteRenderer ringRenderer;
     [SerializeField] bool usable = false;
+    [SerializeField] private AudioClip buildTurretSoundClip;
 
     private GameObject tower;
     private Color startColor;
@@ -75,5 +76,6 @@ public class Plot : MonoBehaviour
             = this.sr.sortingLayerID;
 
         tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
+        AudioSource.PlayClipAtPoint(buildTurretSoundClip, new Vector3( -960, -540, -10), 0.6f);
     }
 }
