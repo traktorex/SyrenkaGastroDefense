@@ -73,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 233341485
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: f3a181cbead1d484fbe8dcabf7e8cfc3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -106,8 +106,13 @@ MonoBehaviour:
   firingPoint: {fileID: 4205254785737305343}
   spriteRenderer: {fileID: 65332808024210013}
   targetingRange: 300
-  bulletsPerSecond: 4
+  bulletsPerSecond: 3
   rotationSpeed: 100
+  shootSoundClip: {fileID: 0}
+  shootSoundClip2: {fileID: 0}
+  layerOrder: 5
+  sortingLayerID: -717846749
+  soundVariation: 0
 --- !u!1 &6238988544425555529
 GameObject:
   m_ObjectHideFlags: 0

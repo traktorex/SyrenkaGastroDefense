@@ -16,7 +16,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private float timeBetweenWaves = 5f;
     [SerializeField] private float difficultyScalingFactor = 0.75f;
     //higher the number the more enemies will spawn per Wave --> z 8 base enemies, w drugiej fali bêdzie ju¿ 13
-    [SerializeField] private float enemiesPerSecondCap = 15f;
+    [SerializeField] private float epsc = 15f; //enemies per second Cap
 
     [Header("Events")]
     public static UnityEvent onEnemyDestroy = new UnityEvent();
@@ -82,6 +82,11 @@ public class EnemySpawner : MonoBehaviour
             currentWave++;
             StartCoroutine(StartWave());
         }
+
+        else
+        {
+
+        }
         //else
             //wyswietl koniec poziomu itd
     }
@@ -100,6 +105,6 @@ public class EnemySpawner : MonoBehaviour
 
     private float EnemiesPerSecond()
     {
-        return Mathf.Clamp(enemiesPerSecond * Mathf.Pow(currentWave, difficultyScalingFactor), 0f, enemiesPerSecondCap);
+        return Mathf.Clamp(enemiesPerSecond * Mathf.Pow(currentWave, difficultyScalingFactor), 0f, epsc);
     }
 }

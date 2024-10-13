@@ -651,7 +651,13 @@ PlayerSettings:
   XboxOneOverrideIdentityName: 
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    Build: 0
+    Game Performance: 0
+    Legacy Analytics: 0
+    Purchasing: 0
+    UDP: 0
+    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -671,11 +677,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 1e7a1cf1-01fd-4a13-b01e-178a749eab18
+  cloudProjectId: 952df610-c71d-4589-843d-abc93ee5bf20
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: Syrenka Gastro Defense
-  organizationId: traktorex
+  organizationId: mimakuma
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
