@@ -38,11 +38,26 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
   - name: Background
     uniqueID: 3935253243
     locked: 0
-  - name: Default
-    uniqueID: 0
+  - name: Enviro Art
+    uniqueID: 3187128241
+    locked: 0
+  - name: WaterBack
+    uniqueID: 3861458155
+    locked: 0
+  - name: SzuwarBack
+    uniqueID: 1420371809
+    locked: 0
+  - name: WaterFront
+    uniqueID: 2713937791
+    locked: 0
+  - name: SzuwarFront
+    uniqueID: 3577120547
     locked: 0
   - name: Turrets
     uniqueID: 233341485
