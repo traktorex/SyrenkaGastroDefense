@@ -545,7 +545,7 @@ GameObject:
   - component: {fileID: 887608714}
   - component: {fileID: 887608713}
   m_Layer: 5
-  m_Name: Image
+  m_Name: "Tytu\u0142_Image"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
