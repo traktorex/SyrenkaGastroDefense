@@ -9651,6 +9651,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2101192571432591981, guid: f1f6459ca4efa7246b381618206c6aff, type: 3}
   m_PrefabInstance: {fileID: 1245882598}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1256275934 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3527660724562106567, guid: 9cf3351670c464b48a1e95261f2d8b59, type: 3}
+  m_PrefabInstance: {fileID: 1111255260}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1a221beabaefef48a4a2a353d4b8bb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1268164783
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16464,6 +16475,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1463465312748643511, guid: b15eaf70f1389a946a24123ca32d6603, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1256275934}
+    - target: {fileID: 1463465312748643511, guid: b15eaf70f1389a946a24123ca32d6603, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetSelectedTower
+      objectReference: {fileID: 0}
     - target: {fileID: 2621886801757908817, guid: b15eaf70f1389a946a24123ca32d6603, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -16487,6 +16506,14 @@ PrefabInstance:
     - target: {fileID: 2621886801757908817, guid: b15eaf70f1389a946a24123ca32d6603, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2948371977243440930, guid: b15eaf70f1389a946a24123ca32d6603, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1256275934}
+    - target: {fileID: 2948371977243440930, guid: b15eaf70f1389a946a24123ca32d6603, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetSelectedTower
       objectReference: {fileID: 0}
     - target: {fileID: 3512534087617205406, guid: b15eaf70f1389a946a24123ca32d6603, type: 3}
       propertyPath: m_Name
@@ -16596,6 +16623,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6456212142969612226, guid: b15eaf70f1389a946a24123ca32d6603, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1256275934}
+    - target: {fileID: 6456212142969612226, guid: b15eaf70f1389a946a24123ca32d6603, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetSelectedTower
+      objectReference: {fileID: 0}
     - target: {fileID: 6609032814274143233, guid: b15eaf70f1389a946a24123ca32d6603, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -16619,6 +16654,14 @@ PrefabInstance:
     - target: {fileID: 6609032814274143233, guid: b15eaf70f1389a946a24123ca32d6603, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7449797239727373260, guid: b15eaf70f1389a946a24123ca32d6603, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1256275934}
+    - target: {fileID: 7449797239727373260, guid: b15eaf70f1389a946a24123ca32d6603, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetSelectedTower
       objectReference: {fileID: 0}
     - target: {fileID: 8583950211004227087, guid: b15eaf70f1389a946a24123ca32d6603, type: 3}
       propertyPath: m_AnchorMax.y
@@ -16657,10 +16700,10 @@ SceneRoots:
   - {fileID: 1727657007}
   - {fileID: 1111255260}
   - {fileID: 1214152193}
+  - {fileID: 6988311196696318083}
   - {fileID: 739390675}
   - {fileID: 2066392234}
   - {fileID: 1437480698}
   - {fileID: 905837114}
   - {fileID: 744266564}
   - {fileID: 619408503}
-  - {fileID: 6988311196696318083}

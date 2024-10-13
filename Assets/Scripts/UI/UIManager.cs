@@ -11,18 +11,18 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject creditsPanel;
 
     private bool isCreditsPanelOpen = false;
-
+/*
     //InGame Stuff
     [Header("In Game Menu")]
     [SerializeField] static GameObject levelEndPanel;
     [SerializeField] Image levelCleared;
     [SerializeField] Image levelFailed;
-
+*/
 
     private void Start()
     {
         creditsPanel.SetActive(false);
-        levelEndPanel.SetActive(false);
+        /*levelEndPanel.SetActive(false);*/
     }
     public void StartGame()
     {
@@ -49,7 +49,7 @@ public class UIManager : MonoBehaviour
 
     public static void OpenLevelEndPanel()
     {
-        levelEndPanel.SetActive(true);
+        /*levelEndPanel.SetActive(true);*/
     }
 
     public void ExitGame()
@@ -84,8 +84,4 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void ChangeSprite()
-    {
-
-    }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using TMPro;
+using UnityEngine.UI;
 
 public class HoverMenu : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
@@ -10,6 +11,8 @@ public class HoverMenu : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     [SerializeField] Animator animator;
 
     private bool isMenuOpen = false;
+
+
 
     public void OnPointerEnter(PointerEventData eventData)
     {
@@ -25,7 +28,10 @@ public class HoverMenu : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         Debug.Log("OnMouseExit");
     }
 
-    
+    public void ButtonSpriteChange()
+    {
+
+    }
 
    
     
