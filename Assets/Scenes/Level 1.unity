@@ -4716,7 +4716,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7852024651091331042, guid: 91108c91f22fc6c4291ee1974b10d3b8, type: 3}
       propertyPath: m_SortingLayer
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7852024651091331042, guid: 91108c91f22fc6c4291ee1974b10d3b8, type: 3}
       propertyPath: m_SortingOrder
@@ -4724,7 +4724,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7852024651091331042, guid: 91108c91f22fc6c4291ee1974b10d3b8, type: 3}
       propertyPath: m_SortingLayerID
-      value: -717846749
+      value: -800269185
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7075,7 +7075,7 @@ GameObject:
   - component: {fileID: 934447856}
   - component: {fileID: 934447855}
   m_Layer: 5
-  m_Name: Image
+  m_Name: hajs_img
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7088,17 +7088,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 934447853}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3989408812975304518}
+  m_Father: {fileID: 7654581246871816699}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 644.21387, y: 471.1526}
-  m_SizeDelta: {x: 55.296, y: 46.789}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 279.53455, y: 15.881424}
+  m_SizeDelta: {x: 55.29599, y: 46.789}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &934447855
 MonoBehaviour:
@@ -10687,7 +10687,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4123997688024373599, guid: 0c296eb3f157c834a828c9a9465934b6, type: 3}
       propertyPath: m_SortingLayer
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4123997688024373599, guid: 0c296eb3f157c834a828c9a9465934b6, type: 3}
       propertyPath: m_SortingOrder
@@ -10695,7 +10695,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4123997688024373599, guid: 0c296eb3f157c834a828c9a9465934b6, type: 3}
       propertyPath: m_SortingLayerID
-      value: -717846749
+      value: -800269185
       objectReference: {fileID: 0}
     - target: {fileID: 5691802170017080834, guid: 0c296eb3f157c834a828c9a9465934b6, type: 3}
       propertyPath: m_Name
@@ -17287,7 +17287,6 @@ RectTransform:
   - {fileID: 4662780559678021984}
   - {fileID: 1120979704103769888}
   - {fileID: 508282381539704697}
-  - {fileID: 934447854}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -18489,6 +18488,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 512709231057631248}
+  - {fileID: 934447854}
   m_Father: {fileID: 3989408812975304518}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
