@@ -15,8 +15,8 @@ public class UIManager : MonoBehaviour
     //InGame Stuff
     [Header("In Game Menu")]
     [SerializeField] static GameObject levelEndPanel;
-    [SerializeField] public Image levelCleared;
-    [SerializeField] public Image levelFailed;
+    [SerializeField] Image levelCleared;
+    [SerializeField] Image levelFailed;
 
 
     private void Start()
@@ -82,5 +82,10 @@ public class UIManager : MonoBehaviour
     public void NextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void ChangeSprite()
+    {
+
     }
 }
