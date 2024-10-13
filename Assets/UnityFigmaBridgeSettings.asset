@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119c1bd3601648f28a252a6030e067b6, type: 3}
   m_Name: UnityFigmaBridgeSettings
   m_EditorClassIdentifier: 
-  DocumentUrl: https://www.figma.com/design/7hh2VHkLlpAnpH1AF6e2Mk/Mermaid-Gastro-Defense?node-id=0-1&t=yxWKRemUn11Mr6Nc-1
+  DocumentUrl: https://www.figma.com/design/7hh2VHkLlpAnpH1AF6e2Mk/Mermaid-Gastro-Defense?m=auto&t=IkqOicXMwYY0xO3A-6
   BuildPrototypeFlow: 1
   RunTimeAssetsScenePath: Assets/Scenes/Level 2.unity
   EnableAutoLayout: 0
