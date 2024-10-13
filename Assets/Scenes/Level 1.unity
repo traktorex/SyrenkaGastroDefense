@@ -17642,7 +17642,7 @@ MonoBehaviour:
   - {fileID: 3636127513498781563, guid: 04a4e486d3617924990a69c68f881a68, type: 3}
   - {fileID: 3636127513498781563, guid: 2f0078cf58200444fb23e421a9a1c15c, type: 3}
   baseEnemies: 10
-  enemiesPerSecond: 2
+  enemiesPerSecond: 0.3
   timeBetweenWaves: 5
   difficultyScalingFactor: 0.75
   epsc: 15

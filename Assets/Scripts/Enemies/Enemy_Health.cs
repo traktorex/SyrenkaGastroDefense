@@ -8,6 +8,12 @@ public class Enemy_Health : MonoBehaviour
     [SerializeField] private float hitPoints = 2;
     [SerializeField] private int currencyWorth = 25;
 
+    [Header("Sounds")]
+    [SerializeField] private AudioClip shootSoundClip;
+    [SerializeField] private AudioClip shootSoundClip2;
+    [SerializeField] private AudioClip finishSoundClip;
+
+    public bool soundVariation = false;
     private bool isDestroyed = false;
     public void TakeDamage(float dmg)
     {
@@ -18,7 +24,15 @@ public class Enemy_Health : MonoBehaviour
             EnemySpawner.onEnemyDestroy.Invoke();
             LevelManager.main.GetGold(currencyWorth);
             isDestroyed = true;
+            AudioSource.PlayClipAtPoint(finishSoundClip,
+                new Vector3(-960, -540, -10), 0.4f);
             Destroy(gameObject);
+        }
+        else
+        {
+            AudioSource.PlayClipAtPoint(soundVariation ? shootSoundClip : shootSoundClip2,
+                new Vector3(-960, -540, -10), 0.4f);
+            soundVariation = !soundVariation;
         }
     }
 
