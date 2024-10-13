@@ -17212,12 +17212,12 @@ MonoBehaviour:
   - name: Rybka
     cost: 100
     prefab: {fileID: 4673306188491567510, guid: dbf789f7101e9a843a9efcd5ef69dd48, type: 3}
-  - name: Pyza
-    cost: 200
-    prefab: {fileID: 4673306188491567510, guid: d267f2878b1d68c4e8930cf8c52d317d, type: 3}
   - name: Miodek
-    cost: 300
+    cost: 200
     prefab: {fileID: 4673306188491567510, guid: 6b1a5b1971ee18840ab62e9fedf34a32, type: 3}
+  - name: Pyza
+    cost: 300
+    prefab: {fileID: 4673306188491567510, guid: d267f2878b1d68c4e8930cf8c52d317d, type: 3}
   - name: Pierogis
     cost: 400
     prefab: {fileID: 4673306188491567510, guid: 100bdcd03c999244992bdb6009107308, type: 3}
@@ -17406,7 +17406,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -959.62994, y: 526.0102}
+  m_AnchoredPosition: {x: -959.62994, y: 542}
   m_SizeDelta: {x: 181, y: 344}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4420998857720723919
@@ -17941,9 +17941,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59a1668255f198e4dadb31ff85911b21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "zwyci\u0119stwo": {fileID: 0}
-  "pora\u017Cka": {fileID: 0}
-  levelEndPanel: {fileID: 0}
+  "zwyci\u0119stwo": {fileID: 8639174024573951834}
+  "pora\u017Cka": {fileID: 4597758916391463048}
+  levelEndPanel: {fileID: 7501432259178996109}
   start: {fileID: 1428656386}
   path:
   - {fileID: 291012750}
