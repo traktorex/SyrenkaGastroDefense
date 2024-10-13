@@ -17372,10 +17372,11 @@ GameObject:
   - component: {fileID: 1316198426078937691}
   - component: {fileID: 5058761812761680369}
   - component: {fileID: 7428273480024198698}
-  - component: {fileID: 5924320014809515290}
   - component: {fileID: 3461336103603554235}
+  - component: {fileID: 7428273480024198700}
+  - component: {fileID: 7428273480024198699}
   m_Layer: 5
-  m_Name: HoverMenu
+  m_Name: ShopMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17711,7 +17712,7 @@ MonoBehaviour:
   enemiesPerSecond: 2
   timeBetweenWaves: 5
   difficultyScalingFactor: 0.75
-  enemiesPerSecondCap: 15
+  epsc: 15
 --- !u!1 &4811961069242766386
 GameObject:
   m_ObjectHideFlags: 0
@@ -17975,19 +17976,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4597758916391463048}
   m_CullTransparentMesh: 1
---- !u!114 &5924320014809515290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4088390113852436462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13a82b3645b382443aebdd55c48874b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 3461336103603554235}
 --- !u!1 &6027026521101845352
 GameObject:
   m_ObjectHideFlags: 0
@@ -18020,6 +18008,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59a1668255f198e4dadb31ff85911b21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "zwyci\u0119stwo": {fileID: 0}
+  "pora\u017Cka": {fileID: 0}
+  levelEndPanel: {fileID: 0}
   start: {fileID: 1428656386}
   path:
   - {fileID: 291012750}
@@ -18030,6 +18021,7 @@ MonoBehaviour:
   - {fileID: 98271719}
   currency: 0
   numberOfWaves: 8
+  isWinning: 0
 --- !u!224 &6261387348400678153
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18455,6 +18447,75 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7428273480024198699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4088390113852436462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b1746a396a348f4e8ead27028721b39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 3461336103603554235}
+--- !u!114 &7428273480024198700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4088390113852436462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 7428273480024198698}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7428273480024198699}
+        m_TargetAssemblyTypeName: ClickMenu, Assembly-CSharp
+        m_MethodName: Open
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &7497954070558956968
 CanvasRenderer:
   m_ObjectHideFlags: 0
