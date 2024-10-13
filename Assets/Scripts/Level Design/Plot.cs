@@ -69,6 +69,11 @@ public class Plot : MonoBehaviour
 
         LevelManager.main.GetBroke(towerToBuild.cost);
 
+        BuildingManager.main.GetSelectedTower().prefab.GetComponent<Turrets>().layerOrder 
+            = this.sr.sortingOrder + 1;
+        BuildingManager.main.GetSelectedTower().prefab.GetComponent<Turrets>().sortingLayerID
+            = this.sr.sortingLayerID;
+
         tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
     }
 }

@@ -10,6 +10,7 @@ public class Turrets : MonoBehaviour
     [SerializeField] private LayerMask enemyMask;
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform firingPoint;
+    [SerializeField] private SpriteRenderer spriteRenderer;
 
     [Header("Attribute")]
     [SerializeField] public float targetingRange = 3.5f;
@@ -19,6 +20,14 @@ public class Turrets : MonoBehaviour
 
     private Transform target;
     private float timeUntilFire;
+    public int layerOrder = 0;
+    public int sortingLayerID = 0;
+
+    private void Start()
+    {
+        spriteRenderer.sortingOrder = layerOrder;
+        spriteRenderer.sortingLayerID = sortingLayerID;
+    }
 
     private void Update()
     {
