@@ -54,21 +54,24 @@ TagManager:
   - name: SzuwarBack
     uniqueID: 1420371809
     locked: 0
+  - name: Enemies
+    uniqueID: 818386139
+    locked: 0
   - name: Turrets
     uniqueID: 233341485
     locked: 0
   - name: WaterFront
     uniqueID: 2713937791
     locked: 0
+  - name: EnemiesCase2
+    uniqueID: 2187513603
+    locked: 0
   - name: SzuwarFront
     uniqueID: 3577120547
-    locked: 0
-  - name: Enemies
-    uniqueID: 818386139
     locked: 0
   - name: Bullets
     uniqueID: 2106560087
     locked: 0
   - name: UI
-    uniqueID: 907040523
+    uniqueID: 3494698111
     locked: 0

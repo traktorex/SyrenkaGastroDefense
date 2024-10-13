@@ -10,15 +10,28 @@ public class Turrets : MonoBehaviour
     [SerializeField] private LayerMask enemyMask;
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform firingPoint;
+    [SerializeField] private SpriteRenderer spriteRenderer;
 
     [Header("Attribute")]
     [SerializeField] public float targetingRange = 3.5f;
     [SerializeField] private float bulletsPerSecond = 1f;
     [SerializeField] private float rotationSpeed = 100f;
 
+    [Header("Sounds")]
+    [SerializeField] private AudioClip shootSoundClip;
+    [SerializeField] private AudioClip shootSoundClip2;
 
     private Transform target;
     private float timeUntilFire;
+    public int layerOrder = 0;
+    public int sortingLayerID = 0;
+    public bool soundVariation = false;
+
+    private void Start()
+    {
+        spriteRenderer.sortingOrder = layerOrder;
+        spriteRenderer.sortingLayerID = sortingLayerID;
+    }
 
     private void Update()
     {
@@ -56,7 +69,9 @@ public class Turrets : MonoBehaviour
         Bullets bulletScript = bulletObj.GetComponent<Bullets>();
         bulletScript.SetTarget(target);
         Debug.Log("Turret is shooting.");
-
+        AudioSource.PlayClipAtPoint(soundVariation ? shootSoundClip : shootSoundClip2, 
+            new Vector3(-960, -540, -10), 0.4f);
+        soundVariation = !soundVariation;
     }
 
     private void FindTarget()
