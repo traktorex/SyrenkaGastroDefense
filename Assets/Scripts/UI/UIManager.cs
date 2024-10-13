@@ -14,15 +14,15 @@ public class UIManager : MonoBehaviour
 
     //InGame Stuff
     [Header("In Game Menu")]
-    [SerializeField] GameObject levelEndPanel;
-    [SerializeField] Image levelCleared;
-    [SerializeField] Image levelFailed;
-
+    [SerializeField] static GameObject levelEndPanel;
+    [SerializeField] public Image levelCleared;
+    [SerializeField] public Image levelFailed;
 
 
     private void Start()
     {
         creditsPanel.SetActive(false);
+        levelEndPanel.SetActive(false);
     }
     public void StartGame()
     {
@@ -45,6 +45,11 @@ public class UIManager : MonoBehaviour
             creditsPanel.SetActive(false);
             isCreditsPanelOpen = false;
         }
+    }
+
+    public static void OpenLevelEndPanel()
+    {
+        levelEndPanel.SetActive(true);
     }
 
     public void ExitGame()

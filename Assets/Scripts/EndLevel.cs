@@ -1,18 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class EndLevel : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [Header("References")]
+    [SerializeField] GameObject enemy;
+    [SerializeField] GameObject EndPoint;
+
+    [Header("Attributes")]
+    [SerializeField] public static int HP = 3;
+    [SerializeField]
+
+    public bool isEnemy = true;
+    private void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public static void LoseHP()
     {
-        
+     
+        if (HP > 1)
+        {
+            HP--;
+        }
+
+        else
+        {
+            Time.timeScale = 0f;
+            UIManager.OpenLevelEndPanel();
+        }
     }
+
+    
 }
