@@ -2,14 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class UIManager : MonoBehaviour
 {
     //Title Menu
-
+    [Header("Title Menu")]
     [SerializeField] GameObject creditsPanel;
 
     private bool isCreditsPanelOpen = false;
+
+    //InGame Stuff
+    [Header("In Game Menu")]
+    [SerializeField] GameObject levelEndPanel;
+    [SerializeField] Image levelCleared;
+    [SerializeField] Image levelFailed;
+
+
 
     private void Start()
     {
