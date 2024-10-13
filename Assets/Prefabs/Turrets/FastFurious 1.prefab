@@ -108,10 +108,10 @@ MonoBehaviour:
   targetingRange: 300
   bulletsPerSecond: 3
   rotationSpeed: 100
-  shootSoundClip: {fileID: 0}
-  shootSoundClip2: {fileID: 0}
-  layerOrder: 5
-  sortingLayerID: -717846749
+  shootSoundClip: {fileID: 8300000, guid: 7b982397a107991428d28a429cd339ee, type: 3}
+  shootSoundClip2: {fileID: 8300000, guid: 3a356d57c0ea5534e80ba71a26c7ba19, type: 3}
+  layerOrder: 3
+  sortingLayerID: 1420371809
   soundVariation: 0
 --- !u!1 &6238988544425555529
 GameObject:

@@ -96,9 +96,9 @@ public class Turrets : MonoBehaviour
         Quaternion targetRotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
         turretRotationPoint.rotation = Quaternion.RotateTowards(turretRotationPoint.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
-    private void OnDrawGizmosSelected()
+/*    private void OnDrawGizmosSelected()
     {
         Handles.color = Color.green;
         Handles.DrawWireDisc(transform.position, transform.forward, targetingRange);
-    }
+    }*/
 }
